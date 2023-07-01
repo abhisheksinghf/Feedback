@@ -6,3 +6,8 @@
 body{
     background: #631c9c;
 }
+@media (max-width: 576px) {
+    .card {
+        margin-top: 20vh;
+    }
+}
