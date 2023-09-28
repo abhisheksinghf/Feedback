@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-top: 30px;
+            position: relative; /* Needed for logo positioning */
+        }
+        .logo {
+            position: absolute;
+            top: 30px; /* Adjust as needed */
+            right: 30px; /* Adjust as needed */
+            max-width: 40px;
+        }
+        h4 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: purple; /* Blue title color */
+			font-weight: bold;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            color: #333; /* Dark grey font color for labels */
+        }
+        .form-control {
+            background-color: #f2f2f2; /* Light grey text box background */
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo beside the title -->
+        <h4>
+            <img src="logo_qwerty.png" alt="Logo" class="logo">Share your Feedback✨
+        </h4>
+		<hr>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="what_learned">What did you learn from the session?</label>
+                <textarea class="form-control" id="what_learned" name="what_learned" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="rate_session">Rate this session:</label>
+                <select class="form-control" id="rate_session" name="rate_session" required>
+                    <option value="">Select one</option>
+                    <option value="5">Excellent</option>
+                    <option value="4">Very Good</option>
+                    <option value="3">Good</option>
+                    <option value="2">Fair</option>
+                    <option value="1">Poor</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="expectations">What would you like to learn in our upcoming workshops?</label>
+                <textarea class="form-control" id="expectations" name="expectations" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            
+            <!-- Thank you GIF placeholder -->
+            <div class="text-center mt-3">
+                <img src="thankyou.gif" alt="Thank You GIF" style="max-width: 200px;">
+            </div>
+        </form>
+    </div>
+
+    <!-- Link to Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
